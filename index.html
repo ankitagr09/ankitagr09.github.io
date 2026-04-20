@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ankit Agrawal – Full Stack Developer from Jaipur, India. Building high-converting, SEO & CRO optimized websites. Shopify & WordPress specialist.">
+<meta name="keywords" content="Full Stack Developer, Shopify Developer, WordPress Developer, Web Development, Jaipur, SEO, CRO, Ankit Agrawal">
+<meta property="og:title" content="Ankit Agrawal – Full Stack Developer">
+<meta property="og:description" content="Building High-Converting Digital Experiences. Shopify, WordPress, React, PHP specialist.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="index.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ankit Agrawal — Full Stack Developer">
+<meta name="twitter:description" content="Building High-Converting Digital Experiences. Shopify, WordPress, React, PHP specialist.">
+<link rel="canonical" href="index.html">
+<meta name="robots" content="index, follow">
+<title>Ankit Agrawal — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.min.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Ankit Agrawal","jobTitle":"Full Stack Developer","description":"Full Stack Developer from Jaipur specializing in Shopify, WordPress, SEO, CRO and lead generation websites.","sameAs":["https://linkedin.com","https://github.com"]},{"@type":"WebSite","name":"Ankit Agrawal — Full Stack Developer","description":"High-converting, SEO-optimized websites and custom web development for Shopify, WordPress, React and PHP.","url":"index.html","publisher":{"@type":"Person","name":"Ankit Agrawal"}}]}
+</script>
+
+</head>
+<body>
+
+<div id="threeScene" class="three-scene" aria-hidden="true"></div>
+<div id="pageLoader" class="page-loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Loading portfolio...</div>
+  </div>
+</div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<nav aria-label="Primary navigation">
+  <a href="index.html" class="nav-logo">Ankit<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html#experience">Experience</a></li>
+    <li><a href="services.html#skills">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    <a href="contact.html" class="btn-hire">Hire Me ↗</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html" onclick="closeMobile()">About</a>
+  <a href="services.html" onclick="closeMobile()">Services</a>
+  <a href="projects.html" onclick="closeMobile()">Projects</a>
+  <a href="about.html#experience" onclick="closeMobile()">Experience</a>
+  <a href="services.html#skills" onclick="closeMobile()">Skills</a>
+  <a href="contact.html" onclick="closeMobile()">Contact</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">Available for Freelance Projects</div>
+      <h1>
+        <span class="line">Building</span>
+        <span class="line"><span class="accent">High-Converting</span></span>
+        <span class="line"><span class="accent2">Digital Experiences</span></span>
+      </h1>
+      <p class="hero-sub">Full Stack Developer specializing in Shopify & WordPress custom development, SEO-optimized websites, and lead generation funnels that actually convert.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary" aria-label="View portfolio work">View My Work <span>→</span></a>
+        <a href="#contact" class="btn-outline" aria-label="Contact Ankit">Let's Talk 💬</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">4<span>+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">12<span>+</span></div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8<span>+</span></div>
+          <div class="stat-label">Services Offered</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <div class="avatar">AA</div>
+          <div>
+            <div class="hero-card-name">Ankit Agrawal</div>
+            <div class="hero-card-role">Full Stack Developer · Jaipur, IN</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag active">Shopify</span>
+          <span class="tag active">WordPress</span>
+          <span class="tag">React</span>
+          <span class="tag">PHP</span>
+          <span class="tag">SEO</span>
+          <span class="tag">CRO</span>
+        </div>
+        <div class="progress-items">
+          <div class="progress-item">
+            <label><span>Web Development</span><span>95%</span></label>
+            <div class="progress-bar"><div class="progress-fill" style="width:95%"></div></div>
+          </div>
+          <div class="progress-item">
+            <label><span>Shopify Dev</span><span>90%</span></label>
+            <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="progress-item">
+            <label><span>SEO / CRO</span><span>85%</span></label>
+            <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+          </div>
+          <div class="progress-item">
+            <label><span>Digital Marketing</span><span>80%</span></label>
+            <div class="progress-bar"><div class="progress-fill" style="width:80%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label reveal">About Me</div>
+        <h2 class="section-title reveal reveal-delay-1">Crafting Web Experiences That <span style="color:var(--accent)">Convert & Perform</span></h2>
+        <p class="reveal reveal-delay-2">I'm Ankit Agrawal, a Full Stack Developer from Jaipur, Rajasthan with 4+ years of experience building digital products that go beyond aesthetics — they drive real results.</p>
+        <p class="reveal reveal-delay-3">My edge lies in combining solid engineering with conversion-focused design principles. Whether it's a Shopify store, a WordPress website, or a custom web app, I build with SEO, speed, and user psychology in mind.</p>
+        <div class="about-highlights">
+          <div class="highlight-item reveal reveal-delay-2">
+            <div class="highlight-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <div class="highlight-text">
+              <h4>SEO & CRO Specialist</h4>
+              <p>Every pixel optimized for search rankings and user conversions</p>
+            </div>
+          </div>
+          <div class="highlight-item reveal reveal-delay-3">
+            <div class="highlight-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="highlight-text">
+              <h4>Shopify & WordPress Expert</h4>
+              <p>Custom theme development, Liquid templating, and plugin solutions</p>
+            </div>
+          </div>
+          <div class="highlight-item reveal reveal-delay-4">
+            <div class="highlight-icon"><i class="fa-solid fa-rocket"></i></div>
+            <div class="highlight-text">
+              <h4>Full Stack Capabilities</h4>
+              <p>React, PHP, MySQL — from UI to database, I own the full stack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-card-stack">
+          <div class="stacked-card">
+            <div class="location-badge">
+              <span class="dot-green"></span>
+              📍 Jaipur, Rajasthan, India
+            </div>
+            <h4>Core Technology Stack</h4>
+            <div class="mini-skills">
+              <span class="mini-skill">PHP</span>
+              <span class="mini-skill">JavaScript</span>
+              <span class="mini-skill">React</span>
+              <span class="mini-skill">Next.js</span>
+              <span class="mini-skill">Angular</span>
+              <span class="mini-skill">Shopify Liquid</span>
+              <span class="mini-skill">WordPress</span>
+              <span class="mini-skill">MySQL</span>
+              <span class="mini-skill">Tailwind</span>
+              <span class="mini-skill">Bootstrap</span>
+              <span class="mini-skill">HTML5 / CSS3</span>
+              <span class="mini-skill">jQuery</span>
+            </div>
+          </div>
+          <div class="stacked-card"></div>
+          <div class="stacked-card"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">What I Do</div>
+    <h2 class="section-title reveal reveal-delay-1">Services Tailored to <span style="color:var(--accent)">Your Growth</span></h2>
+    <p class="section-sub reveal reveal-delay-2">From custom development to conversion optimization — every service is engineered to deliver measurable business results.</p>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Web Development</h3>
+        <p>Custom, responsive, and blazing-fast websites built with modern frameworks and best practices.</p>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3>Application Development</h3>
+        <p>Full-stack web applications with robust backends, clean APIs, and intuitive user interfaces.</p>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+        <h3>Digital Marketing</h3>
+        <p>Data-driven marketing strategies to boost your online presence and drive qualified traffic.</p>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal reveal-delay-4">
+        <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h3>SEO Optimization</h3>
+        <p>Technical SEO, on-page optimization, and Core Web Vitals improvements that rank and convert.</p>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h3>Shopify Custom Development</h3>
+        <p>Custom Shopify themes, Liquid templates, apps, and conversion-optimized e-commerce stores.</p>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>WordPress Custom Development</h3>
+        <p>Bespoke WordPress themes, plugins, and gutenberg blocks tailored to your exact needs.</p>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>Portfolio Websites</h3>
+        <p>Memorable, high-impact portfolio sites that position you as a premium professional.</p>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-card reveal reveal-delay-4">
+        <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Lead Generation Websites</h3>
+        <p>Funnel-optimized landing pages and websites engineered to capture and convert leads.</p>
+        <div class="service-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label reveal">Tech Stack</div>
+    <h2 class="section-title reveal reveal-delay-1">Tools & <span style="color:var(--accent)">Technologies</span></h2>
+    <p class="section-sub reveal reveal-delay-2">A broad and deep skillset across the modern web stack.</p>
+    <div class="skills-grid">
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-list">
+          <span class="skill-pill">PHP</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">JSON</span>
+          <span class="skill-pill">jQuery</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-title">CMS Platforms</div>
+        <div class="skill-list">
+          <span class="skill-pill">WordPress</span>
+          <span class="skill-pill">Shopify</span>
+          <span class="skill-pill">Shopify Liquid</span>
+          <span class="skill-pill">WooCommerce</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-3">
+        <div class="skill-group-title">Frameworks & Libraries</div>
+        <div class="skill-list">
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Next.js</span>
+          <span class="skill-pill">Angular</span>
+          <span class="skill-pill">Vite</span>
+          <span class="skill-pill">Bootstrap</span>
+          <span class="skill-pill">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-4">
+        <div class="skill-group-title">Database & Backend</div>
+        <div class="skill-list">
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">PHP MVC</span>
+          <span class="skill-pill">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-title">Tools & Dev Environment</div>
+        <div class="skill-list">
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">Eclipse</span>
+          <span class="skill-pill">NetBeans</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-title">Specializations</div>
+        <div class="skill-list">
+          <span class="skill-pill">SEO</span>
+          <span class="skill-pill">CRO</span>
+          <span class="skill-pill">Lead Gen Funnels</span>
+          <span class="skill-pill">Core Web Vitals</span>
+          <span class="skill-pill">Page Speed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">Portfolio</div>
+    <h2 class="section-title reveal reveal-delay-1">Featured <span style="color:var(--accent)">Projects</span></h2>
+    <p class="section-sub reveal reveal-delay-2">A selection of work spanning e-commerce, SaaS, business websites, and more.</p>
+    <div class="projects-filter reveal reveal-delay-3">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Shopify</button>
+      <button class="filter-btn">WordPress</button>
+      <button class="filter-btn">React / Next</button>
+      <button class="filter-btn">PHP</button>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a3e,#3d1fa8)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a1a3e,#3d1fa8)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="Live Site">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>WordPress</span><span>PHP</span><span>WooCommerce</span></div>
+          <h3>Q3Mart</h3>
+          <p>A feature-rich e-commerce platform built on WordPress with custom WooCommerce integrations and optimized checkout flow.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d3b2e,#06d6a0)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0d3b2e,#06d6a0)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-chart-simple"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Vite</span><span>PHP</span><span>MySQL</span></div>
+          <h3>Feetrack</h3>
+          <p>A fee tracking and management application with a snappy Vite frontend paired with a robust PHP/MySQL backend.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1e1204,#b45309)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1e1204,#b45309)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-house"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <h3>LXM Interior</h3>
+          <p>An elegant portfolio/showcase website for an interior design firm with smooth animations and gallery features.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-4">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f172a,#e44d26)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0f172a,#e44d26)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-building"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Angular</span><span>PHP</span><span>MySQL</span></div>
+          <h3>Wishcowork</h3>
+          <p>A coworking space management platform with real-time availability tracking built with Angular and PHP APIs.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1729,#3b82f6)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0f1729,#3b82f6)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>React</span><span>Next.js</span><span>SEO</span></div>
+          <h3>AphilexIT</h3>
+          <p>An IT company website with SSR-powered SEO, service showcasing, and high-performance Core Web Vitals scores.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a2e,#9333ea)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0a2e,#9333ea)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Shopify</span><span>Liquid</span><span>CRO</span></div>
+          <h3>YouthRitual</h3>
+          <p>A premium beauty & wellness Shopify store with custom Liquid templates and CRO-optimized product pages.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a0a,#dc2626)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0a0a,#dc2626)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-ice-cream"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>WordPress</span><span>PHP</span></div>
+          <h3>Monyal Ice Creams</h3>
+          <p>A vibrant WordPress website for an ice cream brand with online ordering and loyalty program integration.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-4">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0f08,#d97706)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0f08,#d97706)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-shirt"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Shopify</span><span>Liquid</span></div>
+          <h3>Desi Darzi</h3>
+          <p>Custom ethnic fashion Shopify store with tailored size guidance and high-converting product pages.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#071a10,#16a34a)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#071a10,#16a34a)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-tshirt"></i></div>
+          <div class="project-links">
+            <a href="https://swagatamclothing.com/" target="_blank" rel="noopener noreferrer" aria-label="View Swagatam Clothing project">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Shopify</span><span>E-commerce</span></div>
+          <h3>Swagatam Clothing</h3>
+          <p>A full-featured fashion e-commerce store with optimized collections, search UX, and conversion-focused cart.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1a2e,#f72585)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0d1a2e,#f72585)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+          <div class="project-links">
+            <a href="https://www.smilesfashion.com/" target="_blank" rel="noopener noreferrer" aria-label="View Smiles Fashion project">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Shopify</span><span>CRO</span><span>SEO</span></div>
+          <h3>Smiles Fashion</h3>
+          <p>Premium fashion Shopify store with custom theme modifications, SEO structure, and optimized PDP pages.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a0a,#22c55e)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0a1a0a,#22c55e)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div class="project-links">
+            <a href="https://vaidaushadhiayurveda.in/" target="_blank" rel="noopener noreferrer" aria-label="View Vaida Ushadhi Ayurveda project">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>WordPress</span><span>WooCommerce</span><span>SEO</span></div>
+          <h3>Vaida Ushadhi Ayurveda</h3>
+          <p>Ayurvedic health products store with local SEO optimization, blog content integration, and WhatsApp ordering.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-4">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a0a1e,#7c5cfc)">
+          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0a0a1e,#7c5cfc)"></div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-thumb-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="project-links">
+            <a href="https://nationalinstituteoftrading.in/" target="_blank" rel="noopener noreferrer" aria-label="View National Institute of Trading project">↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>WordPress</span><span>Lead Gen</span><span>SEO</span></div>
+          <h3>National Institute of Trading</h3>
+          <p>A lead generation and course showcase website for a trading institute with SEO-optimized landing pages.</p>
+        </div>
+      </div>
+
+      <div class="coming-soon-card reveal">
+        <div class="cs-icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3>More Projects Coming Soon</h3>
+        <p>Exciting new projects in progress. Stay tuned for more case studies, live demos, and open-source contributions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label reveal">Career</div>
+    <h2 class="section-title reveal reveal-delay-1">Work <span style="color:var(--accent)">Experience</span></h2>
+    <p class="section-sub reveal reveal-delay-2">A proven track record across agencies, companies, and independent freelancing.</p>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Freelance Full Stack Developer</div>
+            <div class="timeline-period">Jan 2022 – Present</div>
+          </div>
+          <div class="timeline-company">Self-Employed · Remote</div>
+          <div class="timeline-desc">Independently delivered 12+ full-stack projects spanning Shopify stores, WordPress websites, React applications, and custom PHP backends. Responsible for the complete lifecycle from discovery to deployment, including SEO strategy and post-launch optimization. Built high-converting lead generation funnels for clients across e-commerce, education, and services sectors.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">PHP Developer</div>
+            <div class="timeline-period">Feb 2024 – Oct 2024</div>
+          </div>
+          <div class="timeline-company">Commerce V3</div>
+          <div class="timeline-desc">Worked on WordPress and UI development using PHP template engines. Developed custom WordPress themes, implemented WooCommerce functionality, and contributed to multiple client e-commerce projects. Collaborated with design teams to translate mockups into pixel-perfect, responsive HTML/CSS/PHP templates.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Web Developer</div>
+            <div class="timeline-period">Jul 2023 – Jan 2024</div>
+          </div>
+          <div class="timeline-company">Infyniti Software Solutions</div>
+          <div class="timeline-desc">Managed development projects across multiple technologies including PHP, JavaScript, and WordPress. Worked with cross-functional teams to deliver client projects on time and to specification. Gained exposure to project management workflows, client communication, and multi-technology codebase maintenance.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION & CERTS -->
+<section style="background:var(--bg2)">
+  <div class="section-inner">
+    <div class="edu-certs-grid">
+      <div>
+        <div class="section-label reveal">Academic Background</div>
+        <h2 class="section-title reveal reveal-delay-1" style="font-size:clamp(1.6rem,3vw,2.4rem)">Education</h2>
+        <div class="edu-item reveal reveal-delay-2">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h4>MA – Sociology</h4>
+            <p>University of Rajasthan · 2021 – 2023</p>
+          </div>
+        </div>
+        <div class="edu-item reveal reveal-delay-3">
+          <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="edu-info">
+            <h4>BA – Bachelor of Arts</h4>
+            <p>University of Rajasthan · 2018 – 2021</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label reveal">Continuous Learning</div>
+        <h2 class="section-title reveal reveal-delay-1" style="font-size:clamp(1.6rem,3vw,2.4rem)">Certifications</h2>
+        <div class="cert-item reveal reveal-delay-1">
+          <div class="cert-badge">🪟</div>
+          <div class="cert-info">
+            <h5>OS Security</h5>
+            <span>Microsoft</span>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-2">
+          <div class="cert-badge">☁️</div>
+          <div class="cert-info">
+            <h5>Generative AI Fundamentals</h5>
+            <span>Google Cloud</span>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-3">
+          <div class="cert-badge">🧪</div>
+          <div class="cert-info">
+            <h5>Software Testing</h5>
+            <span>University of Leeds</span>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-4">
+          <div class="cert-badge">🛡️</div>
+          <div class="cert-info">
+            <h5>Cybersecurity</h5>
+            <span>SkillUp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">Social Proof</div>
+    <h2 class="section-title reveal reveal-delay-1">What Clients <span style="color:var(--accent)">Say</span></h2>
+    <p class="section-sub reveal reveal-delay-2">Trusted by entrepreneurs and businesses to deliver results that matter.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Ankit delivered our Shopify store ahead of schedule with incredible attention to detail. Our conversion rate improved by 34% after launch."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#7c5cfc,#a78bfa)">RK</div>
+          <div class="author-info">
+            <h5>Rahul Kumar</h5>
+            <span>E-commerce Founder</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The WordPress site Ankit built for us ranks on page 1 for all our target keywords. His SEO knowledge is top-notch and the design is stunning."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#06d6a0,#059669)">PM</div>
+          <div class="author-info">
+            <h5>Priya Mehta</h5>
+            <span>Business Owner, Jaipur</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-3">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Professional, communicative, and technically brilliant. Ankit understood our vision and executed it perfectly. Our lead volume doubled within 2 months."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#f72585,#b5179e)">AS</div>
+          <div class="author-info">
+            <h5>Arjun Sharma</h5>
+            <span>Digital Agency Director</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner reveal">
+  <h2>Ready to Build Something<br>That Converts?</h2>
+  <p>Let's discuss your project. I'm available for freelance work and open to exciting opportunities.</p>
+  <div class="cta-btns">
+      <a href="contact.html" class="btn-white">Start a Project</a>
+      <a href="mailto:garga1217@gmail.com" class="btn-ghost">Send an Email</a>
+    </div>
+</div>
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label reveal">Get In Touch</div>
+    <h2 class="section-title reveal reveal-delay-1">Let's <span style="color:var(--accent)">Work Together</span></h2>
+    <p class="section-sub reveal reveal-delay-2">Have a project in mind? I'd love to hear about it. Let's build something great together.</p>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p style="color:var(--text2);line-height:1.8;margin-bottom:8px">I'm currently available for freelance projects, consulting, and full-time opportunities. Whether you need a custom Shopify store, a WordPress website, or a full-stack application — I'm here to help.</p>
+        <div class="contact-info-items">
+          <a href="mailto:garga1217@gmail.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <h4>Email</h4>
+              <span>garga1217@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+919782081452" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-item-text">
+              <h4>Phone</h4>
+              <span>+91 9782081452</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-item-text">
+              <h4>Location</h4>
+              <span>Jaipur, Rajasthan, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="mailto:garga1217@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i> Portfolio</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Visit LinkedIn">in LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Visit GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <h3>Send a Message</h3>
+        <p>I'll get back to you within 24 hours.</p>
+        <form action="https://formsubmit.co/Garga1217@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from portfolio contact form">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Service Required</label>
+            <select name="service">
+              <option value="">Select a service...</option>
+              <option>Web Development</option>
+              <option>Shopify Custom Development</option>
+              <option>WordPress Custom Development</option>
+              <option>SEO Optimization</option>
+              <option>Lead Generation Website</option>
+              <option>Application Development</option>
+              <option>Digital Marketing</option>
+              <option>Portfolio Website</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea name="message" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+          </div>
+          <button class="btn-submit" type="submit">
+            <span>Send Message</span> <span>→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Ankit<span>.</span>Agrawal</div>
+  <div class="footer-copy">© 2025 Ankit Agrawal · Full Stack Developer · Jaipur, India<br>Building high-converting digital experiences.</div>
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="mailto:garga1217@gmail.com">Email</a>
+  </div>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
