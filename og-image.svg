@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ankit Agrawal Portfolio">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#1c1240"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cfc"/>
+      <stop offset="100%" stop-color="#06d6a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="120" r="220" fill="#7c5cfc" opacity="0.12"/>
+  <circle cx="160" cy="540" r="200" fill="#06d6a0" opacity="0.1"/>
+  <rect x="90" y="120" width="1020" height="390" rx="28" fill="#111118" stroke="#2a2a3a"/>
+  <text x="140" y="230" font-family="Syne, Arial, sans-serif" font-size="52" font-weight="700" fill="#f0f0f5">Ankit Agrawal</text>
+  <text x="140" y="290" font-family="DM Sans, Arial, sans-serif" font-size="36" fill="#c9c9d6">Full Stack Developer • Shopify • WordPress • SEO • CRO</text>
+  <rect x="140" y="336" width="580" height="8" rx="4" fill="url(#accent)"/>
+  <text x="140" y="410" font-family="DM Sans, Arial, sans-serif" font-size="30" fill="#a9a9b9">Building High-Converting Digital Experiences</text>
+  <text x="140" y="468" font-family="DM Sans, Arial, sans-serif" font-size="24" fill="#9090a6">https://ankitagr09.github.io/</text>
+</svg>

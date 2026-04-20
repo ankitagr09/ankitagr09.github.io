@@ -1,11 +1,47 @@
-// Cursor glow
+// Sitewide cursor movement effect
 const glow = document.getElementById('cursorGlow');
-document.addEventListener('mousemove', e => {
-  if (glow) {
-    glow.style.left = e.clientX + 'px';
-    glow.style.top = e.clientY + 'px';
+if (glow) {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+
+  if (prefersReducedMotion || hasCoarsePointer) {
+    glow.style.display = 'none';
+  } else {
+    const pointer = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const follower = { x: pointer.x, y: pointer.y };
+
+    const interactiveSelector = 'a, button, .btn-primary, .btn-outline, .btn-hire, .project-card, .service-card, .testimonial-card, .contact-item, .social-btn, .filter-btn';
+
+    document.addEventListener('mousemove', (e) => {
+      pointer.x = e.clientX;
+      pointer.y = e.clientY;
+    });
+
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.closest(interactiveSelector)) {
+        glow.classList.add('cursor-glow-active');
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      if (e.target.closest(interactiveSelector)) {
+        glow.classList.remove('cursor-glow-active');
+      }
+    });
+
+    document.addEventListener('mousedown', () => glow.classList.add('cursor-glow-press'));
+    document.addEventListener('mouseup', () => glow.classList.remove('cursor-glow-press'));
+
+    const follow = () => {
+      follower.x += (pointer.x - follower.x) * 0.14;
+      follower.y += (pointer.y - follower.y) * 0.14;
+      glow.style.left = `${follower.x}px`;
+      glow.style.top = `${follower.y}px`;
+      requestAnimationFrame(follow);
+    };
+    follow();
   }
-});
+}
 
 // Theme toggle
 const toggle = document.getElementById('themeToggle');
@@ -95,6 +131,37 @@ const progressObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.3 });
 document.querySelectorAll('.hero-card').forEach(el => progressObserver.observe(el));
+
+// Mouse movement tilt/parallax effect for cards
+function initMouseMovementEffect() {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  if (prefersReducedMotion || hasCoarsePointer) return;
+
+  const tiltTargets = document.querySelectorAll(
+    '.project-card, .testimonial-card, .service-card, .contact-form, .timeline-card, .skill-group'
+  );
+
+  tiltTargets.forEach((card) => {
+    card.style.transformStyle = 'preserve-3d';
+    card.style.willChange = 'transform';
+
+    card.addEventListener('mousemove', (event) => {
+      const rect = card.getBoundingClientRect();
+      const relX = (event.clientX - rect.left) / rect.width;
+      const relY = (event.clientY - rect.top) / rect.height;
+
+      const rotateY = (relX - 0.5) * 10;
+      const rotateX = (0.5 - relY) * 8;
+
+      card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+}
 
 function initThreeScene() {
   const container = document.getElementById('threeScene');
@@ -205,6 +272,7 @@ function initThreeScene() {
 }
 
 initThreeScene();
+initMouseMovementEffect();
 
 window.addEventListener('load', () => {
   const loader = document.getElementById('pageLoader');

@@ -1,0 +1,31 @@
+# Ankit Agrawal Portfolio
+
+Site: https://ankitagr09.github.io/
+Owner: Ankit Agrawal
+Primary Topic: Full-stack web development, Shopify and WordPress custom development, SEO/CRO, lead generation websites, and LLM-ready website strategy.
+
+## Main Pages
+- Home: https://ankitagr09.github.io/
+- About: https://ankitagr09.github.io/about.html
+- Services: https://ankitagr09.github.io/services.html
+- Projects: https://ankitagr09.github.io/projects.html
+- Contact: https://ankitagr09.github.io/contact.html
+
+## Services
+- Web Development
+- Application Development
+- Digital Marketing
+- SEO Optimization
+- Shopify Custom Development
+- WordPress Custom Development
+- Portfolio Websites
+- Lead Generation Websites
+- Custom Plugin Development
+- Custom Shopify Development
+- SEO-Optimized Stores
+- LLM Training on Website
+
+## Contact
+- Email: mailto:garga1217@gmail.com
+- Phone: tel:+919782081452
+- Location: Jaipur, Rajasthan, India
