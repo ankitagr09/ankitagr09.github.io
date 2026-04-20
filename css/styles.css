@@ -566,6 +566,21 @@ section { padding: clamp(70px,10vw,120px) clamp(20px,8vw,100px); position: relat
 }
 .project-body h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
 .project-body p { font-size: 0.86rem; color: var(--text3); line-height: 1.6; }
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.project-meta span {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border2);
+  background: color-mix(in srgb, var(--surface2) 85%, transparent);
+  font-size: 0.72rem;
+  color: var(--text2);
+  line-height: 1.2;
+}
 .coming-soon-card {
   background: var(--surface);
   border: 2px dashed var(--border2);
@@ -700,6 +715,7 @@ section { padding: clamp(70px,10vw,120px) clamp(20px,8vw,100px); position: relat
   background: linear-gradient(135deg, #3d1fa8 0%, #1a0e6e 50%, #0d0d25 100%);
   border: 1px solid rgba(124,92,252,0.3);
   position: relative; overflow: hidden; text-align: center;
+  margin-top: 10%;
 }
 .cta-banner::before {
   content: ''; position: absolute;

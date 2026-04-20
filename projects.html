@@ -32,7 +32,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
-<script src="https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.min.js" defer></script>
+<script type="module">
+  import * as THREE from 'https://esm.sh/three@0.162.0';
+  window.THREE = THREE;
+</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Ankit Agrawal","jobTitle":"Full Stack Developer","description":"Full Stack Developer from Jaipur specializing in Shopify, WordPress, SEO, CRO and lead generation websites.","sameAs":["https://linkedin.com","https://github.com"],"url":"https://ankitagr09.github.io/"},{"@type":"WebSite","name":"Ankit Agrawal — Full Stack Developer","description":"High-converting, SEO-optimized websites and custom web development for Shopify, WordPress, React and PHP.","url":"https://ankitagr09.github.io/projects.html","publisher":{"@type":"Person","name":"Ankit Agrawal"}}]}
 </script>
@@ -80,203 +83,81 @@
       <button class="filter-btn">PHP</button>
     </div>
     <div class="projects-grid">
-
       <div class="project-card reveal reveal-delay-1">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a3e,#3d1fa8)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a1a3e,#3d1fa8)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link" title="Live Site">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>WordPress</span><span>PHP</span><span>WooCommerce</span></div>
-          <h3>Q3Mart</h3>
-          <p>A feature-rich e-commerce platform built on WordPress with custom WooCommerce integrations and optimized checkout flow.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a3e,#3d1fa8)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a1a3e,#3d1fa8)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://q3mart.in/?v=bf5536c76208" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Q3Mart">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>WordPress</span><span>WooCommerce</span></div><h3>Q3Mart</h3><p>Full-featured online mart built on WordPress and WooCommerce with product catalog, cart, checkout, and order management.</p><div class="project-meta"><span>E-Commerce</span><span>INR 25,000 - 45,000</span><span>Live</span><span>WordPress Expert</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-2">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0d3b2e,#06d6a0)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0d3b2e,#06d6a0)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-chart-simple"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>Vite</span><span>PHP</span><span>MySQL</span></div>
-          <h3>Feetrack</h3>
-          <p>A fee tracking and management application with a snappy Vite frontend paired with a robust PHP/MySQL backend.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d3b2e,#06d6a0)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#0d3b2e,#06d6a0)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="#" class="project-link" aria-label="Feetrack source code delivery">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>Vite</span><span>PHP</span></div><h3>Feetrack</h3><p>Fee tracking and management system with a blazing-fast Vite frontend and robust PHP backend, delivered as source code.</p><div class="project-meta"><span>SaaS / Web App</span><span>INR 30,000 - 60,000</span><span>Delivered</span><span>Custom Web App</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-3">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#1e1204,#b45309)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1e1204,#b45309)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-house"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <h3>LXM Interior</h3>
-          <p>An elegant portfolio/showcase website for an interior design firm with smooth animations and gallery features.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1e1204,#b45309)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#1e1204,#b45309)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://lxminteriormumbai.in/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit LXM Interior">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3>LXM Interior</h3><p>Elegant interior design portfolio site for LXM Interior Mumbai with responsive layouts and visually rich presentation.</p><div class="project-meta"><span>Business Website</span><span>INR 8,000 - 15,000</span><span>Live</span><span>Static / Landing</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-4">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0f172a,#e44d26)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0f172a,#e44d26)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-building"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>Angular</span><span>PHP</span><span>MySQL</span></div>
-          <h3>Wishcowork</h3>
-          <p>A coworking space management platform with real-time availability tracking built with Angular and PHP APIs.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a2e,#9333ea)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0a2e,#9333ea)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://youthritual.com/mon" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit YouthRitual">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>Shopify</span></div><h3>YouthRitual</h3><p>Lifestyle and wellness Shopify store with custom theme, smart collections, and a conversion-optimized layout.</p><div class="project-meta"><span>E-Commerce</span><span>INR 20,000 - 40,000</span><span>Live</span><span>Shopify Expert</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-1">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1729,#3b82f6)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0f1729,#3b82f6)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-laptop-code"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>React</span><span>Next.js</span><span>SEO</span></div>
-          <h3>AphilexIT</h3>
-          <p>An IT company website with SSR-powered SEO, service showcasing, and high-performance Core Web Vitals scores.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a0a,#dc2626)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0a0a,#dc2626)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://www.monyal.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Monyal Ice Creams">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>WordPress</span><span>WooCommerce</span></div><h3>Monyal Ice Creams</h3><p>Ice cream brand store on WordPress showcasing flavors, online ordering, and a strong brand identity.</p><div class="project-meta"><span>E-Commerce</span><span>INR 20,000 - 35,000</span><span>Live</span><span>WordPress Expert</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-2">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a2e,#9333ea)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0a2e,#9333ea)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>Shopify</span><span>Liquid</span><span>CRO</span></div>
-          <h3>YouthRitual</h3>
-          <p>A premium beauty & wellness Shopify store with custom Liquid templates and CRO-optimized product pages.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0f08,#d97706)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0f08,#d97706)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://desidarzi.in/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Desi Darzi">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>Shopify</span></div><h3>Desi Darzi</h3><p>Fashion and ethnic wear Shopify store with tailored product pages, size charts, and brand-first design.</p><div class="project-meta"><span>E-Commerce</span><span>INR 20,000 - 40,000</span><span>Live</span><span>Shopify Expert</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-3">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a0a,#dc2626)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0a0a,#dc2626)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-ice-cream"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>WordPress</span><span>PHP</span></div>
-          <h3>Monyal Ice Creams</h3>
-          <p>A vibrant WordPress website for an ice cream brand with online ordering and loyalty program integration.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#071a10,#16a34a)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#071a10,#16a34a)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://swagatamclothing.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Swagatam Clothing">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>Shopify</span></div><h3>Swagatam Clothing</h3><p>Apparel brand store on Shopify with curated collections, modern UI, and a seamless shopping experience.</p><div class="project-meta"><span>E-Commerce</span><span>INR 20,000 - 40,000</span><span>Live</span><span>Shopify Expert</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-4">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0f08,#d97706)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#1a0f08,#d97706)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-shirt"></i></div>
-          <div class="project-links">
-            <a href="#" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>Shopify</span><span>Liquid</span></div>
-          <h3>Desi Darzi</h3>
-          <p>Custom ethnic fashion Shopify store with tailored size guidance and high-converting product pages.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1a2e,#f72585)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#0d1a2e,#f72585)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://www.smilesfashion.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Smiles Fashion">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>NopCommerce</span><span>ASP.NET</span></div><h3>Smiles Fashion</h3><p>Enterprise-grade fashion e-commerce on NopCommerce with ASP.NET architecture built for scale, features, and security.</p><div class="project-meta"><span>E-Commerce</span><span>INR 50,000 - 90,000</span><span>Live</span><span>Enterprise E-Com</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-1">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#071a10,#16a34a)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#071a10,#16a34a)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-tshirt"></i></div>
-          <div class="project-links">
-            <a href="https://swagatamclothing.com/" target="_blank" rel="noopener noreferrer" aria-label="View Swagatam Clothing project">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>Shopify</span><span>E-commerce</span></div>
-          <h3>Swagatam Clothing</h3>
-          <p>A full-featured fashion e-commerce store with optimized collections, search UX, and conversion-focused cart.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a0a1e,#7c5cfc)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#0a0a1e,#7c5cfc)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://nationalinstituteoftrading.in/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit National Institute of Trading">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>LMS</span><span>WordPress</span></div><h3>National Institute of Trading</h3><p>Complete EdTech solution with courses, quizzes, certificates, and a full marketing website for trading education.</p><div class="project-meta"><span>LMS / EdTech</span><span>INR 40,000 - 80,000</span><span>Live</span><span>LMS / EdTech</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-2">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1a2e,#f72585)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0d1a2e,#f72585)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-bag-shopping"></i></div>
-          <div class="project-links">
-            <a href="https://www.smilesfashion.com/" target="_blank" rel="noopener noreferrer" aria-label="View Smiles Fashion project">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>Shopify</span><span>CRO</span><span>SEO</span></div>
-          <h3>Smiles Fashion</h3>
-          <p>Premium fashion Shopify store with custom theme modifications, SEO structure, and optimized PDP pages.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#102a43,#2563eb)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#102a43,#2563eb)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://frontend-eta-six-40.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit LMS NIT frontend">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>React</span><span>Vite</span><span>Vercel</span></div><h3>LMS NIT (Frontend)</h3><p>Modern React-based LMS frontend hosted on Vercel with clean dashboards and optimized student experience.</p><div class="project-meta"><span>LMS Frontend</span><span>INR 25,000 - 50,000</span><span>Live</span><span>React / LMS</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-3">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a0a,#22c55e)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0a1a0a,#22c55e)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-leaf"></i></div>
-          <div class="project-links">
-            <a href="https://vaidaushadhiayurveda.in/" target="_blank" rel="noopener noreferrer" aria-label="View Vaida Ushadhi Ayurveda project">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>WordPress</span><span>WooCommerce</span><span>SEO</span></div>
-          <h3>Vaida Ushadhi Ayurveda</h3>
-          <p>Ayurvedic health products store with local SEO optimization, blog content integration, and WhatsApp ordering.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f172a,#e44d26)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#0f172a,#e44d26)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://wishcoworker.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit WishCowork">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>Custom Web</span><span>WordPress</span></div><h3>WishCowork</h3><p>Co-working website with booking inquiries, amenity showcase, and location-based marketing funnels.</p><div class="project-meta"><span>Business Website</span><span>INR 15,000 - 30,000</span><span>Live</span><span>WordPress Expert</span></div></div>
       </div>
-
       <div class="project-card reveal reveal-delay-4">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0a0a1e,#7c5cfc)">
-          <div class="project-thumb-bg" style="background:linear-gradient(135deg,#0a0a1e,#7c5cfc)"></div>
-          <div class="project-thumb-overlay"></div>
-          <div class="project-thumb-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <div class="project-links">
-            <a href="https://nationalinstituteoftrading.in/" target="_blank" rel="noopener noreferrer" aria-label="View National Institute of Trading project">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-tech"><span>WordPress</span><span>Lead Gen</span><span>SEO</span></div>
-          <h3>National Institute of Trading</h3>
-          <p>A lead generation and course showcase website for a trading institute with SEO-optimized landing pages.</p>
-        </div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#3b0764,#9333ea)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#3b0764,#9333ea)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://www.oliveandcocoa.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Olive and Cocoa">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>PHP Commerce v3</span></div><h3>Olive and Cocoa</h3><p>Premium gifting brand store on PHP Commerce v3 with custom catalog, subscription boxes, and luxury UX.</p><div class="project-meta"><span>E-Commerce</span><span>INR 60,000 - 120,000</span><span>Live</span><span>PHP Commerce</span></div></div>
       </div>
-
-      <div class="coming-soon-card reveal">
-        <div class="cs-icon"><i class="fa-solid fa-rocket"></i></div>
-        <h3>More Projects Coming Soon</h3>
-        <p>Exciting new projects in progress. Stay tuned for more case studies, live demos, and open-source contributions.</p>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1f2937,#111827)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#1f2937,#111827)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://www.valworx.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Valworx">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>PHP Commerce v3</span></div><h3>Valworx</h3><p>Industrial valve and actuator B2B store on PHP Commerce v3 with complex product configuration and bulk ordering.</p><div class="project-meta"><span>Industrial / B2B</span><span>INR 60,000 - 120,000</span><span>Live</span><span>PHP Commerce</span></div></div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f766e,#14b8a6)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#0f766e,#14b8a6)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://www.tads.in/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Tads Project">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>SquareSpace</span></div><h3>Tads Project</h3><p>Modern LMS platform built on SquareSpace for streamlined online learning and effective course management.</p><div class="project-meta"><span>LMS / EdTech</span><span>INR 35,000 - 40,000</span><span>Live</span><span>Squarespace</span></div></div>
+      </div>
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0b3b66,#0284c7)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#0b3b66,#0284c7)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://acsd4u.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Acs Diagnostic">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>WordPress</span><span>WooCommerce</span></div><h3>Acs Diagnostic</h3><p>Healthcare-focused WordPress and WooCommerce site enabling diagnostic bookings and related product sales.</p><div class="project-meta"><span>HealthCare</span><span>INR 25,000 - 45,000</span><span>Live</span><span>WordPress Expert</span></div></div>
+      </div>
+      <div class="project-card reveal reveal-delay-4">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#7c2d12,#f97316)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#7c2d12,#f97316)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://urbancitygifts.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Urban City Gifts">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>Shopify</span></div><h3>Urban City Gifts</h3><p>Shopify-powered store offering curated gift collections with smooth journeys and conversion-ready layouts.</p><div class="project-meta"><span>E-Commerce</span><span>INR 25,000 - 45,000</span><span>Live</span><span>Shopify Expert</span></div></div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1e3a8a,#60a5fa)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#1e3a8a,#60a5fa)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://clevelandeyeclinic.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Clevland Eye Clinic">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>WordPress</span><span>WooCommerce</span></div><h3>Clevland Eye Clinic</h3><p>WordPress and WooCommerce healthcare website designed for patient engagement and online service delivery.</p><div class="project-meta"><span>HealthCare</span><span>INR 15,000 - 30,000</span><span>Live</span><span>WordPress Expert</span></div></div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#431407,#f59e0b)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#431407,#f59e0b)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://eu.baobabcollection.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Baobab Collection">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>Shopify</span></div><h3>Baobab Collection</h3><p>Premium Shopify e-commerce platform for luxury products with elegant visual direction and high-end experience.</p><div class="project-meta"><span>E-Commerce</span><span>INR 25,000 - 45,000</span><span>Live</span><span>Shopify Expert</span></div></div>
+      </div>
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#14532d,#4d7c0f)"><div class="project-thumb-bg" style="background:linear-gradient(135deg,#14532d,#4d7c0f)"></div><div class="project-thumb-overlay"></div><div class="project-links"><a href="https://coworkingtown.in/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit Coworking Town">↗</a></div></div>
+        <div class="project-body"><div class="project-tech"><span>WordPress</span></div><h3>Coworking Town</h3><p>Simple SEO-optimized website built to rank on Google for coworking-related discovery and lead capture.</p><div class="project-meta"><span>Industrial / B2B</span><span>INR 15,000 - 30,000</span><span>Live</span><span>WordPress Expert</span></div></div>
       </div>
 
     </div>
