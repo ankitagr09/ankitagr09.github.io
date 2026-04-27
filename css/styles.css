@@ -516,10 +516,17 @@ section { padding: clamp(70px,10vw,120px) clamp(20px,8vw,100px); position: relat
 }
 .project-card:hover { transform: translateY(-8px); box-shadow: 0 24px 60px rgba(0,0,0,0.35); border-color: var(--border2); }
 .project-thumb {
-    display: none !important;
+  position: relative;
+  display: block;
+  min-height: 220px;
+  overflow: hidden;
 }
 .project-thumb-bg {
-  display: none !important;
+  position: absolute;
+  inset: 0;
+  transition: transform var(--transition);
+  background-size: cover;
+  background-position: center;
 }
 .project-thumb span,
 .project-thumb .project-thumb-icon {
